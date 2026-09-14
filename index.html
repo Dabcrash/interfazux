@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoHome: soluciones inteligentes para un hogar más eficiente y sostenible.">
+    <title>EcoHome — Tecnología para vivir mejor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+        <header class="header">
+            <a class="logo" href="#" aria-label="EcoHome, inicio">ECO<span>HOME</span></a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="#soluciones">Soluciones</a>
+                <a href="#como-funciona">Cómo funciona</a>
+            </nav>
+
+            <a href="#recomendacion" class="profile-link" aria-label="Abrir recomendador">
+                <img src="img/usuario.png" alt="">
+            </a>
+        </header>
+
+        <div class="curve" aria-hidden="true"></div>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">TECNOLOGÍA CON PROPÓSITO</p>
+                <h1 id="hero-title">Un hogar más inteligente, <em>naturalmente.</em></h1>
+                <p class="description">
+                    Soluciones simples para ahorrar energía, cuidar tus recursos
+                    y vivir mejor todos los días.
+                </p>
+                <div class="actions">
+                    <a href="#recomendacion" class="button">Encontrar mi solución <span aria-hidden="true">↗</span></a>
+                    <a href="#soluciones" class="text-link">Explorar productos</a>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-label="Ilustración de un hogar sostenible">
+                <div class="sun" aria-hidden="true"></div>
+                <div class="leaf leaf-one" aria-hidden="true"></div>
+                <div class="leaf leaf-two" aria-hidden="true"></div>
+                <div class="house">
+                    <div class="roof"></div>
+                    <div class="house-body">
+                        <div class="window"></div>
+                        <div class="door"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="solutions" id="soluciones" aria-labelledby="solutions-title">
+            <div class="section-heading">
+                <p class="eyebrow">PARA CADA ESPACIO</p>
+                <h2 id="solutions-title">Pequeños cambios,<br><em>grandes impactos.</em></h2>
+            </div>
+            <div class="solution-grid">
+                <article class="solution-card">
+                    <span class="card-number">01</span>
+                    <span class="card-icon" aria-hidden="true">◌</span>
+                    <h3>Ahorra energía</h3>
+                    <p>Controla tu consumo y automatiza tus luces.</p>
+                    <a href="#recomendacion">Ver solución <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="solution-card featured">
+                    <span class="card-number">02</span>
+                    <span class="card-icon" aria-hidden="true">⌁</span>
+                    <h3>Cuida el agua</h3>
+                    <p>Detecta fugas y usa cada gota de forma consciente.</p>
+                    <a href="#recomendacion">Ver solución <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="solution-card">
+                    <span class="card-number">03</span>
+                    <span class="card-icon" aria-hidden="true">✦</span>
+                    <h3>Vive seguro</h3>
+                    <p>Protege tu hogar estés donde estés.</p>
+                    <a href="#recomendacion">Ver solución <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="recommendation" id="recomendacion" aria-labelledby="recommendation-title">
+            <div>
+                <p class="eyebrow">EMPIEZA POR LO ESENCIAL</p>
+                <h2 id="recommendation-title">¿No sabes por dónde empezar?</h2>
+                <p>Cuéntanos qué necesita tu hogar y te recomendamos una solución a tu medida.</p>
+
+                <form id="form-recomendacion" novalidate>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?">
+                        <p class="error-message" id="error-nombre"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
+                        <p class="error-message" id="error-correo"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="necesidad">¿Qué te gustaría mejorar?</label>
+                        <select id="necesidad" name="necesidad">
+                            <option value="">Selecciona una opción</option>
+                            <option value="energia">Ahorrar energía</option>
+                            <option value="agua">Cuidar el agua</option>
+                            <option value="seguridad">Vivir más seguro</option>
+                        </select>
+                        <p class="error-message" id="error-necesidad"></p>
+                    </div>
+
+                    <button type="submit" class="button button-light">Quiero mi recomendación <span aria-hidden="true">↗</span></button>
+
+                    <p class="success-message" id="mensaje-exito">¡Listo! Ya recibimos tu solicitud, pronto te escribiremos con tu recomendación.</p>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer" id="como-funciona">
+            <a class="logo" href="#">ECO<span>HOME</span></a>
+            <p>Diseñado para vivir mejor, en armonía con el planeta.</p>
+            <small>EcoHome - Univalle</small>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
